@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Global Variables
+:root {
+    --primary-blue: #0B87FF;
+    --secondary-blue: #E6F0FF;
+    --dark-green: #348681;
+    --light-green: #00E4BB;
+    --red: #F34672;
+    --grey: #A6ABBD;
+    --transition: .2s ease-in-out;
+}
+
+// Global styles
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--secondary-blue);
+}
+
+// navigation style
+.navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.nav-item {
+    list-style-type: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+.nav-item>a {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    transition: var(--transition);
+}
+.nav-item:hover {
+    font-size: 36px;
+    transition: var(--transition);
+}
+.nav-item a.active {
+    transition: var(--transition);
+    color: var(--secondary-blue);
+    background: var(--primary-blue);
+    border-radius: 26px;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 8px, rgba(0, 0, 0, 0.22) 4px 4px 8px;
+}
+
+
+// styles for mobile phones
+@media screen and (width: 420px) {
+}
