@@ -19,7 +19,7 @@ import Profile from './Components/Pages/Profile';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+    <div className="App">
       
       {/* Routes for Pages */}
       <Routes>
@@ -30,24 +30,13 @@ function App() {
         <Route path='/NewsBuzz' element={<NewsBuzz/>}/>
         <Route path='/Profile' element={<Profile/>}/>
       </Routes>
-      
-      <nav className='navbar'>
-        <li className='nav-item'>
-          <NavLink to="/Dashboard"><PiSquaresFourFill /></NavLink>
-        </li>
-        <li className='nav-item'>
-          <NavLink to="/NewsShorts"><AiFillPlaySquare /></NavLink>
-        </li>
-        <li className='nav-item'>
-          <NavLink to="/NewsFeed"><BiSolidMessageSquareDetail /></NavLink>
-        </li>
-        <li className='nav-item'>
-          <NavLink to="/NewsBuzz"><HiColorSwatch /></NavLink>
-        </li>
-        <li className='nav-item'>
-          <NavLink to="/Profile"><BsPersonCircle /></NavLink>
-        </li>
-      </nav>
+    <nav className='navbar'>
+        <NavLink className='nav-item' to="/Dashboard"><PiSquaresFourFill /></NavLink>
+        <NavLink className='nav-item' to="/NewsShorts"><AiFillPlaySquare /></NavLink>
+        <NavLink className='nav-item' to="/NewsFeed"><BiSolidMessageSquareDetail /></NavLink>
+        <NavLink className='nav-item' to="/NewsBuzz"><HiColorSwatch /></NavLink>
+        <NavLink className='nav-item' to="/Profile"><BsPersonCircle /></NavLink>
+    </nav>
     </div>
     </BrowserRouter>
   );
