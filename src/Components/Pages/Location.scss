@@ -1,0 +1,97 @@
+.preference {  
+    .pre-btn-3col {
+        cursor: default;
+
+        span {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .pre-btn-location {
+        cursor: default;
+        display: flex;
+        gap: 18px;
+        flex-direction: column;
+        background: white;
+        border-radius: 24px;
+
+        button:hover {
+            box-shadow: none;
+        }
+
+        input {
+            margin: 0 25px 25px 25px;
+            background: var(--secondary-blue);
+            border: none;
+            height: 45px;
+            border-radius: 24px;
+            text-align: center;
+            color: var(--primary-blue);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .pre-btn-location:hover {
+        box-shadow: rgba(0, 0, 0, 0.062) 4px 4px 8px, rgba(5, 5, 5, 0.103) 4px 4px 8px;
+    }
+}
+
+// style for slider checkbox switch
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    .switch input {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--secondary-blue);
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 28px;
+    }
+
+    .slider:before {
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        height: 34px;
+        width: 34px;
+        left: 0px;
+        bottom: 0px;
+        background-color: var(--red);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider:before {
+        background-color: var(--light-green);
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}

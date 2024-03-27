@@ -38,11 +38,20 @@ h6 {
     font-weight: 400;
 }
 
+// toggle view of menu
+.display-block {
+    display: block;
+}
+.display-none {
+    display: none;
+}
+
 // navigation style
 .navbar {
-    position: absolute;
-    width: 100%;
+    position: fixed;
     bottom: 0;
+    left: 0;
+    width: 100%;
     background: white;
     display: grid;
     grid-template-rows: auto;

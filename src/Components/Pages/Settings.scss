@@ -1,0 +1,30 @@
+.sub-menu{
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background: var(--secondary-blue);
+    height: 100vh;
+    width: 100vw;
+
+    .set-nav {
+        width: 90vw;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--primary-blue);
+        font-size: 24px;
+
+        .set-nav-back-icon {
+            font-size: 34px;
+        }
+
+        .set-nav-back-icon:hover {
+            cursor: pointer;
+        }
+    }
+}

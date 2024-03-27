@@ -1,0 +1,19 @@
+.caution {
+    height: 40vh;
+    width: 80vw;
+    max-width: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 24px;
+    gap: 25px;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    text-align: center;
+
+    .caution-icon {
+        font-size: 8rem;
+    }
+}

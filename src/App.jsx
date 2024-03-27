@@ -2,7 +2,6 @@ import './App.scss';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 
 // conponent import
-import Underconstruction from './Underconstruction';
 import Dashboard from './Components/Pages/Dashboard';
 import NewsShorts from './Components/Pages/NewsShorts';
 import NewsFeed from './Components/Pages/NewsFeed';
@@ -23,7 +22,6 @@ function App() {
       
       {/* Routes for Pages */}
       <Routes>
-        <Route path='/UnderConstruction' element={<Underconstruction />} />
         <Route path='/Dashboard' element={<Dashboard/>}/>
         <Route path='/NewsShorts' element={<NewsShorts/>}/>
         <Route path='/NewsFeed' element={<NewsFeed/>}/>
